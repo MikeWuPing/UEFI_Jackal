@@ -4,6 +4,12 @@ English | [中文](README.md)
 
 A complete recreation of the NES game **Jackal** that runs natively in a UEFI Shell environment. Rather than emulating NES hardware, this project translates the original game's 6502 disassembly line-by-line into a platform-independent C core, then drives graphics with the UEFI GOP protocol and input/timing with UEFI services. It runs in QEMU (or a real UEFI environment). No audio: sound call sites keep their equivalent state/timing behavior, but nothing depends on the APU or audio data.
 
+<img width="512" height="480" alt="intro" src="https://github.com/user-attachments/assets/e6d96822-c5be-4d65-8680-71fd7ab53187" />
+<img width="512" height="480" alt="gameplay_turret" src="https://github.com/user-attachments/assets/f73d49c7-0c24-4335-b69d-63f10882d197" />
+<img width="512" height="480" alt="boss_fight" src="https://github.com/user-attachments/assets/aa3ec6a8-6ab4-401e-baab-bb5f27181754" />
+<img width="512" height="480" alt="ending" src="https://github.com/user-attachments/assets/68c8d8d4-2231-46f3-9a53-98b299656691" />
+
+
 This repository contains **all original source code and tooling** (the UEFI app, the ROM asset extractor, and the test/verification toolchain). It does **not** contain the original game ROM or any data extracted from it (see the copyright section below).
 
 ## Fidelity Principles
