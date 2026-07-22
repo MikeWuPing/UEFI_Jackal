@@ -3,6 +3,11 @@
 [English](README_en.md) | 中文
 
 由Kimi K3 LLM编写。在 UEFI Shell 环境下用 C 语言完整复刻红白机游戏《赤色要塞》（Jackal）：不模拟 NES 硬件，而是把原游戏的 6502 反汇编逐行翻译成平台无关的 C 核心，再以 UEFI GOP 做图形输出、UEFI 服务做输入与定时，在 QEMU（或真实 UEFI 环境）中原生运行。最终 app 无声音——音效调用点保留等价的状态/时间行为，但不引入任何音频依赖。
+<img width="512" height="480" alt="intro" src="https://github.com/user-attachments/assets/e6d96822-c5be-4d65-8680-71fd7ab53187" />
+<img width="512" height="480" alt="gameplay_turret" src="https://github.com/user-attachments/assets/f73d49c7-0c24-4335-b69d-63f10882d197" />
+<img width="512" height="480" alt="boss_fight" src="https://github.com/user-attachments/assets/aa3ec6a8-6ab4-401e-baab-bb5f27181754" />
+<img width="512" height="480" alt="ending" src="https://github.com/user-attachments/assets/68c8d8d4-2231-46f3-9a53-98b299656691" />
+
 
 本仓库包含**全部原创源代码与工具链**（UEFI 应用 + ROM 资源提取器 + 测试/验证工具），
 **不包含**原游戏 ROM 及由其提取的数据产物（版权原因，见文末）。
