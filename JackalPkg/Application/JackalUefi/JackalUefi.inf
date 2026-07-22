@@ -1,0 +1,52 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = JackalUefi
+  FILE_GUID                      = 9C5E2A40-6B7D-4E0F-D8C3-1A2B4D5E6F70
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  JackalUefi.c
+  platform/gop.c
+  platform/input.c
+  platform/timer.c
+  core/bank.c
+  core/ppu.c
+  core/loader.c
+  core/sound_stub.c
+  core/input_core.c
+  core/game_control.c
+  core/render.c
+  core/scroll.c
+  core/sprite.c
+  core/spawn.c
+  core/jeep.c
+  core/weapon.c
+  core/interact.c
+  core/enemy_ai.c
+  core/enemy_infantry.c
+  core/enemy_tank.c
+  core/enemy_level1.c
+  core/enemy_building.c
+  core/enemy_level2.c
+  core/enemy_level3.c
+  core/enemy_level6.c
+  core/end_of_game.c
+  ../../Generated/jackal_prg_banks.c
+  ../../Generated/jackal_assets.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  JackalPkg/JackalPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  BaseLib
+  SerialPortLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  UefiBootServicesTableLib
+  PrintLib
+  CompilerIntrinsicsLib
